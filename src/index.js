@@ -6,7 +6,8 @@ import CoordinatesButton from './components/CoordinatesButton';
 import DelayedButton from './components/DelayedButton';
 
 ReactDOM.render(
-  <div>
+  <div> 
+  {/* omouseCoordinates is an argument / parameter that we use and pass in an argument when calling it */}
     <CoordinatesButton onReceiveCoordinates={ mouseCoordinates => console.log(mouseCoordinates) } />
     <DelayedButton onDelayedClick={ event => console.log(event) } delay={1500} />
   </div>,
